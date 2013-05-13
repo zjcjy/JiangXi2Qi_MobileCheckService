@@ -1,0 +1,82 @@
+/**
+ * Created with JetBrains WebStorm.
+ * 获得指定用户的相关任务信息，返回的任务列表中不包括已经完成的任务。
+ * User: 陈瑾毅
+ * Date: 13-4-12
+ * Time: 上午11:20
+ * To change this template use File | Settings | File Templates.
+ */
+
+//接口入口函数
+exports.Main = function (_req,_res) {
+    var ifObj= {
+        req:null,
+        res:null,
+        username:"",
+        callbackname:"",
+        caseNo:"",
+        sqlCmd:""
+    };
+
+    var jstb = require('./jsToolBox.js');
+    var UserName,Pwd,CallbackName;
+    try{
+        UserName = jstb.getParam(_req,"username");
+    } catch (err) {}
+
+    try{
+        Pwd = jstb.getParam(_req,"pwd");
+    }catch (err){}
+
+    try{
+        CallbackName = jstb.getParam(_req,"callbackname");
+    }catch (err){}
+
+    ifObj.req = _req;
+    ifObj.res = _res;
+    ifObj.username = UserName;
+    ifObj.pwd = Pwd;
+    ifObj.callbackname = CallbackName;
+    ifObj.sqlCmd = "select UserID,UserName,UserClass,IMEI,Telephone,Email,RealName from Users where UserName='" + UserName + "' and PassWord = '" + Pwd + "' and UserClass = 1 and UserState > -1";
+    var sqlConn = require('./sqlFilter.js');
+    sqlConn.queryData(ifObj.sqlCmd,onSqlCallBack,ifObj);
+};
+
+
+//接口对应数据库输出回调函数
+function onSqlCallBack(_result,_ifObj){
+    var sqlObj = {
+        success:true,
+        code:"0",
+        cause:"",
+        value:{}
+    };
+    if(_result.success) {
+        if(_result.data.length>0) {
+            sqlObj.success = true;
+            sqlObj.code = "0";
+            sqlObj.cause = "";
+            sqlObj.value = "";
+        } else {
+            sqlObj.success = false;
+            sqlObj.code = "-1";
+            sqlObj.cause = "用户名或密码有误";
+            sqlObj.value = "";
+        }
+    } else {
+        sqlObj.success = false;
+        sqlObj.code = "-1";
+        sqlObj.cause = _result.msg;
+        sqlObj.value = {};
+    }
+
+    var respStr = JSON.stringify(sqlObj);
+
+    //判断是否jsonp调用
+    if(_ifObj.callbackname != "")
+    respStr = _ifObj.callbackname + "(" + respStr + ");";
+    _ifObj.res.writeHead(200, {"Content-Type": "text/html;charset:utf-8"});
+    _ifObj.res.write(respStr);
+    _ifObj.res.end();
+}
+

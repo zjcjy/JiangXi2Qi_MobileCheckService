@@ -1,0 +1,70 @@
+/**
+ * Created with JetBrains WebStorm.
+ * 获得系统任务（未分配任务)。
+ * User: 陈瑾毅
+ * Date: 13-5-7
+ * Time: 上午11:20
+ * To change this template use File | Settings | File Templates.
+ */
+
+//接口入口函数
+exports.Main = function (_req,_res) {
+    var ifObj= {
+        req:null,
+        res:null,
+        username:"",
+        callbackname:"",
+        caseNo:"",
+        sqlCmd:""
+    };
+    var jstb = require('./jsToolBox.js');
+    var UserName,AccessToken;
+    try{
+        UserName = jstb.getParam(_req,"username");
+    } catch (err) {}
+
+    try{
+        AccessToken = jstb.getParam(_req,"AccessToken");
+    }catch (err){}
+
+    ifObj.req = _req;
+    ifObj.res = _res;
+    ifObj.userName = UserName;
+    ifObj.accessToken = AccessToken;
+    ifObj.sqlCmd = "select TaskID, TaskType, FrontOperator, FrontState, BackOperator, BackState, Watcher, StateUpdateTime, task.CaseNo, task.Memo , CarMark, CarDriver, CarOwner, Telephone, Address, ImgPath, EstPrice, AuditPrice, FixedPrice, Latitude, Longitude, AccidentTime from task,carcase where task.CaseNo = carcase.CaseNo";
+    var taskTypeStr = " and TaskType in ('查勘','拆检')";
+    var frontStateStr = " and FrontState in (4,5)";
+    var backOperatorStr = " and (BackOperator = '' or isNull(BackOperator))";
+    ifObj.sqlCmd += taskTypeStr + frontStateStr + backOperatorStr;
+    //console.log(ifObj.sqlCmd);
+    var sqlConn = require('./sqlFilter.js');
+    sqlConn.queryData(ifObj.sqlCmd,onSqlCallBack,ifObj);
+};
+
+//接口对应数据库输出回调函数
+function onSqlCallBack(_result,_ifObj){
+    var sqlObj = {
+        success:false,
+        code:"0",
+        cause:"",
+        value:{}
+    };
+    if(_result.success)
+    {
+        sqlObj.success = true;
+        sqlObj.code = "0";
+        sqlObj.cause = "";
+        sqlObj.value = {"systemtask_list":_result.data};
+    }
+    else
+    {
+        sqlObj.success = false;
+        sqlObj.code = "-1";
+        sqlObj.cause = _result.msg;
+        sqlObj.value = {};
+    }
+    _ifObj.res.writeHead(200, {"Content-Type": "text/html;charset:utf-8"});
+    _ifObj.res.write(JSON.stringify(sqlObj));
+    _ifObj.res.end();
+}
+

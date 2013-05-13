@@ -1,0 +1,80 @@
+/**
+ * Created with JetBrains WebStorm.
+ * 获得指定用户的相关任务信息，返回的任务列表中不包括已经完成的任务。
+ * User: 陈瑾毅
+ * Date: 13-4-12
+ * Time: 上午11:20
+ * To change this template use File | Settings | File Templates.
+ */
+
+var at = require('./Interface_AccessToken.js');
+var jstb = require('./jsToolBox.js');
+var ifObj = jstb.ifObj;
+var sqlObj = jstb.sqlObj;
+
+//接口入口函数
+exports.Main = function (_req,_res) {
+    var UserName,AccessToken;
+    try{
+        UserName = jstb.getParam(_req,"UserName");
+    } catch (err) {}
+
+    try{
+        AccessToken = jstb.getParam(_req,"AccessToken");
+    }catch (err){}
+
+    ifObj.req = _req;
+    ifObj.res = _res;
+    ifObj.ifName = "./Interface_GetTaskList.js";
+    ifObj.userName = UserName;
+    ifObj.accessToken = AccessToken;
+    ifObj.sqlCmd = "select CarCase.CaseNo,CarMark,CarDriver,Telephone,Address,EstPrice,AuditPrice,FixedPrice,Latitude,Longitude,TaskType,FrontOperator,FrontState,BackOperator,BackState,Watcher from CarCase,Task where CarCase.CaseNo = Task.CaseNo and (FrontOperator = '" + UserName + "' or BackOperator='" + UserName + "' or Watcher = '" + UserName + "') and BackState < 5";
+
+    //判断信令是否合法
+    at.checkAccessToken(ifObj.accessToken,ifObj.ifName);
+};
+
+
+//接口对应的信令回调函数
+exports.onAccessTokenCallBack = function(_result){
+    if(_result)
+    {
+        var sqlConn = require('./sqlFilter.js');
+        sqlConn.queryData(ifObj.sqlCmd,ifObj.ifName);
+    }
+    else
+    {
+        sqlObj.code = "-1";
+        sqlObj.cause = "AccessToken已失效。";
+        sqlObj.value = {};
+        responseResult();//输出结果。
+    }
+};
+
+
+//接口对应数据库输出回调函数
+exports.onSqlCallBack = function(_result){
+    if(_result.success)
+    {
+        sqlObj.code = "0";
+        sqlObj.cause = "";
+        sqlObj.value = {"task_list":_result.data};
+    }
+    else
+    {
+        sqlObj.code = "-1";
+        sqlObj.cause = _result.msg;
+        sqlObj.value = {};
+    }
+    responseResult();//输出结果。
+};
+
+//输出结果函数
+function responseResult()
+{
+    ifObj.res.writeHead(200, {"Content-Type": "text/html;charset:utf-8"});
+    ifObj.res.write(JSON.stringify(sqlObj));
+    ifObj.res.end();
+}
+
+
