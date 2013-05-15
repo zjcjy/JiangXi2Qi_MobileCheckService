@@ -66,10 +66,12 @@ exports.dbConfig_msSqlServer = {
  */
 exports.dbConfig_mySql = {
     //mySql
-    host:"192.168.1.119",
+    //host:"192.168.1.119",
+    host:"127.0.0.1",
     port:"3306",
     database:"ClaimAssist",
-    user:"assist",
+    //user:"assist",
+    user:"root",
     password:"ipcamera"
 };
 
@@ -86,6 +88,7 @@ exports.ifConfig = {
         "Login",//系统登录
         "GetSystemTask",//获得系统任务（未分配任务)。
         "GetMineTask",//获取我的任务
+        "GetTaskByID",//领取任务
         ""
     ]
 };

@@ -126,8 +126,8 @@ exports.picsLocation = "pics";
  *  服务频道
  */
 exports.baiduPushObj = {
-    host:"http://channel.api.duapp.com/rest/2.0/channel/channel",//安卓&IOS正式版
-    //host:"http://channel.iOSpush.api.duapp.com/rest/2.0/channel/channel",//IOS测试版
+    host:"channel.api.duapp.com",//安卓&IOS正式版
+    //host:"channel.iOSpush.api.duapp.com",//IOS测试版
     apikey:"OUkSyniVvkXeWEaOsTInm4qA",
     secret_key:"HL8kGkAEDmQOh2TX0NHlweQ5uebpGd0i"
 };

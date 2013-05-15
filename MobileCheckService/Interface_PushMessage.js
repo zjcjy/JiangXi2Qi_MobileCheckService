@@ -90,8 +90,10 @@ function onSqlCallBack(_result,_ifObj){
             */
 
             //执行推送
-            var uid = _result.data[0]["PushID"];//'1020751584199017546';
+            var uid = _result.data[0]["PushID"];//
             //console.log(uid);
+            uid='1020751584199017546';
+            //uid='1175398671';
             var Push = require('BaiduPushNodejsServerSDK-master');
             (function() {
                 var opt = {
@@ -127,6 +129,7 @@ function pushMsg(client,_uid,_msgKeys,_msgs) {
     var opt = {
         push_type: 1,
         user_id:  _uid,
+        //channel_id:'4924894361583227587',
         messages: JSON.stringify(_msgs),
         msg_keys: JSON.stringify(_msgKeys)
     };

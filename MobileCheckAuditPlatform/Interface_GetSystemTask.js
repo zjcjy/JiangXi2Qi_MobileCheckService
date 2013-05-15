@@ -28,7 +28,7 @@ exports.Main = function (_req,_res) {
     ifObj.sqlCmd = "select TaskID, TaskType, FrontOperator, FrontState, RealName,BackOperator, BackState, Watcher, DATE_FORMAT(StateUpdateTime,'%Y-%m-%d %H:%I:%S') as StateUpdateTime, task.CaseNo, task.Memo , CarMark, CarDriver, CarOwner, carcase.Telephone, Address, ImgPath, EstPrice, AuditPrice, FixedPrice, carcase.Latitude, carcase.Longitude, DATE_FORMAT(AccidentTime,'%Y-%m-%d %H:%I:%S') as AccidentTime from task,carcase,users where task.CaseNo = carcase.CaseNo and FrontOperator = UserName";
     var taskTypeStr = " and TaskType in ('查勘','拆检')";
     var frontStateStr = " and FrontState in (4,5)";
-    var backOperatorStr = " and (BackOperator = '' or isNull(BackOperator))";
+    var backOperatorStr = " and (BackOperator = '' or isNull(BackOperator)) and BackState = '0'";
     ifObj.sqlCmd += taskTypeStr + frontStateStr + backOperatorStr;
     //console.log(ifObj.sqlCmd);
     var sqlConn = require('./sqlFilter.js');

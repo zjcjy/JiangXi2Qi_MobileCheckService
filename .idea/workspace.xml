@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_CloseCase.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetMineTask.js" />
-      <change type="DELETED" beforePath="E:\公司项目\20130326_理赔业务辅助系统\理赔业务辅助系统\src\MobileCheckService\MobileCheckService\db.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetTaskByID.js" />
+      <change type="DELETED" beforePath="D:\WorkSpace\MobileCheckService\MobileCheckAuditPlatform\Interface_GetTaskList.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\WorkSpace\MobileCheckService\MobileCheckService\db.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileCheckService/Interface_CreateTask.js" afterPath="$PROJECT_DIR$/MobileCheckService/Interface_CreateTask.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetSystemTask.js" afterPath="$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetSystemTask.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileCheckService/Interface_GetTaskList.js" afterPath="$PROJECT_DIR$/MobileCheckService/Interface_GetTaskList.js" />
@@ -37,7 +40,7 @@
     <file path="/Interface_CreateTask.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368087692903" ignored="false" />
     <file path="/a.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1366732669303" ignored="false" />
     <file path="$PROJECT_DIR$/../MobileCheckStatistics/Login.html" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1366796390231" ignored="false" />
-    <file path="/Login.html" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1367557454199" ignored="false" />
+    <file path="/Login.html" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368498455167" ignored="false" />
     <file path="/test.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1366861134274" ignored="false" />
     <file path="/a.html" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1366861832383" ignored="false" />
     <file path="$PROJECT_DIR$/../MobileCheckStatistics/views/Main.ejs" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1366943166975" ignored="false" />
@@ -47,25 +50,26 @@
     <file path="/index.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1366941485356" ignored="false" />
     <file path="/Interface_GetCarTypeList.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1366872852447" ignored="false" />
     <file path="$PROJECT_DIR$/../MobileCheckStatistics/public/JS/Page_Main.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1367029264537" ignored="false" />
-    <file path="/Page_Main.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368439027421" ignored="false" />
+    <file path="/Page_Main.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368549518789" ignored="false" />
     <file path="/mysqlConn.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368416548098" ignored="false" />
     <file path="/fragment.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368071036515" ignored="false" />
     <file path="/db.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1367116206674" ignored="false" />
-    <file path="$PROJECT_DIR$/../MobileCheckAuditPlatform/public/Login.html" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368410086895" ignored="false" />
+    <file path="$PROJECT_DIR$/../MobileCheckAuditPlatform/public/Login.html" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368499340481" ignored="false" />
     <file path="$PROJECT_DIR$/../MobileCheckAuditPlatform/public/JS/config.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1367461420136" ignored="false" />
-    <file path="$PROJECT_DIR$/../MobileCheckAuditPlatform/public/JS/Config.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368429887124" ignored="false" />
+    <file path="$PROJECT_DIR$/../MobileCheckAuditPlatform/public/JS/Config.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368513697538" ignored="false" />
     <file path="/Config.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368429821269" ignored="false" />
     <file path="/Interface_Login.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1367557186673" ignored="false" />
-    <file path="$PROJECT_DIR$/../MobileCheckAuditPlatform/views/Main.ejs" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368410086895" ignored="false" />
-    <file path="$PROJECT_DIR$/../MobileCheckAuditPlatform/public/JS/Page_Main.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368439286996" ignored="false" />
+    <file path="$PROJECT_DIR$/../MobileCheckAuditPlatform/views/Main.ejs" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368516513542" ignored="false" />
+    <file path="$PROJECT_DIR$/../MobileCheckAuditPlatform/public/JS/Page_Main.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368549785702" ignored="false" />
     <file path="$PROJECT_DIR$/../MobileCheckAuditPlatform/public/CSS/Page_Main.css" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368439163305" ignored="false" />
     <file path="/Page_Main.css" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368439163305" ignored="false" />
     <file path="/Interface_GetSystemTask.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368171659850" ignored="false" />
     <file path="/Interface_RepostTask.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368065172758" ignored="false" />
     <file path="/Interface_BindPushUser.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1367907574419" ignored="false" />
-    <file path="/Interface_PushMessage.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368155652609" ignored="false" />
+    <file path="/Interface_PushMessage.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368526641861" ignored="false" />
     <file path="/Interface_ReportTask.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368087806165" ignored="false" />
     <file path="/Interface_GetMineTask.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368439241651" ignored="false" />
+    <file path="/Interface_GetTaskByID.js" changelist="ec8e2ec6-0bc4-4043-84d6-51ae8a0ff8ab" time="1368512824882" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,28 +89,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Interface_GetSystemTask.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetSystemTask.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="40" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Interface_GetMineTask.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetMineTask.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="53" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.44728434">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="30" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
+            <state line="113" column="24" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Interface_CloseCase.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_CloseCase.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="24" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Interface_GetSystemTask.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetSystemTask.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="6" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.5206612">
               <folding />
             </state>
           </provider>
@@ -122,12 +126,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/MobileCheckService/Interface_BindPushUser.js" />
-        <option value="$PROJECT_DIR$/MobileCheckService/Interface_RepostTask.js" />
         <option value="$PROJECT_DIR$/MobileCheckService/Interface_UploadFiles.js" />
         <option value="$PROJECT_DIR$/MobileCheckService/Interface_ReportTask.js" />
-        <option value="$PROJECT_DIR$/MobileCheckService/Interface_PushMessage.js" />
-        <option value="$PROJECT_DIR$/MobileCheckService/config.js" />
         <option value="$PROJECT_DIR$/MobileCheckService/Interface_CreateTask.js" />
         <option value="$PROJECT_DIR$/MobileCheckService/sqlFilter.js" />
         <option value="$PROJECT_DIR$/MobileCheckAuditPlatform/sqlFilter.js" />
@@ -135,17 +135,21 @@
         <option value="$PROJECT_DIR$/MobileCheckService/Interface_GetTaskList.js" />
         <option value="$PROJECT_DIR$/MobileCheckService/mysqlConn.js" />
         <option value="$PROJECT_DIR$/MobileCheckService/Interface_UpdateTask.js" />
-        <option value="$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetSystemTask.js" />
-        <option value="$PROJECT_DIR$/MobileCheckAuditPlatform/config.js" />
         <option value="$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetMineTask.js" />
+        <option value="$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetTaskByID.js" />
+        <option value="$PROJECT_DIR$/MobileCheckService/config.js" />
+        <option value="$PROJECT_DIR$/MobileCheckService/Interface_PushMessage.js" />
+        <option value="$PROJECT_DIR$/MobileCheckAuditPlatform/config.js" />
+        <option value="$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_CloseCase.js" />
+        <option value="$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetSystemTask.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="54" />
     <option name="y" value="-8" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -228,7 +232,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.idesettings.debugger.javascript" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MobileCheckAuditPlatform" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -236,6 +240,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\MobileCheckService\MobileCheckAuditPlatform" />
       <recent name="E:\公司项目\20130326_理赔业务辅助系统\理赔业务辅助系统\src\MobileCheckService\MobileCheckAuditPlatform" />
       <recent name="E:\公司项目\20130326_理赔业务辅助系统\理赔业务辅助系统\src\MobileCheckService\MobileCheckService" />
       <recent name="E:\公司项目\20130326_理赔业务辅助系统\理赔业务辅助系统\src\MobileCheckService" />
@@ -294,16 +299,16 @@
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\公司项目\20130326_理赔业务辅助系统\理赔业务辅助系统\src\MobileCheckService" />
-          <option name="myCopyRoot" value="E:\公司项目\20130326_理赔业务辅助系统\理赔业务辅助系统\src\MobileCheckService" />
+          <option name="myVcsRoot" value="D:\WorkSpace\MobileCheckService" />
+          <option name="myCopyRoot" value="D:\WorkSpace\MobileCheckService" />
         </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\公司项目\20130326_理赔业务辅助系统\理赔业务辅助系统\src\MobileCheckService" />
-          <option name="myCopyRoot" value="E:\公司项目\20130326_理赔业务辅助系统\理赔业务辅助系统\src\MobileCheckService" />
+          <option name="myVcsRoot" value="D:\WorkSpace\MobileCheckService" />
+          <option name="myCopyRoot" value="D:\WorkSpace\MobileCheckService" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -337,17 +342,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="0" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959128" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20871934" sideWeight="0.7107791" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20843092" sideWeight="0.64686996" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28922093" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -391,7 +396,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
@@ -422,102 +427,102 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MobileCheckService/Interface_CreateTask.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="5" selection-start="2832" selection-end="2832" vertical-scroll-proportion="0.035897437" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileCheckService/sqlFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="37" selection-start="909" selection-end="909" vertical-scroll-proportion="0.7190635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/sqlFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="37" selection-start="909" selection-end="909" vertical-scroll-proportion="1.3093289" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/ifFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="17" selection-start="1755" selection-end="1755" vertical-scroll-proportion="0.035897437" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetTaskList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="18" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.077634014" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileCheckService/Interface_GetTaskList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="14" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.64102566">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Sequence.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="23" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="65" column="23" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Query.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="7" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="88" column="7" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/Parser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="11" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="61" column="11" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/Protocol.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="15" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="35" column="15" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MobileCheckService/mysqlConn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="50" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="60" column="50" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MobileCheckService/Interface_UpdateTask.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="29" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="69" column="29" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/config.js">
+    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="30" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetSystemTask.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="40" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0">
+        <state line="78" column="75" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.6051282">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetMineTask.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="53" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.44728434">
+        <state line="73" column="1" selection-start="2403" selection-end="2403" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/mysqlConn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="2" selection-start="909" selection-end="909" vertical-scroll-proportion="0.035117056">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetTaskByID.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="8" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/BaiduPushNodejsServerSDK-master/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="302" column="0" selection-start="9123" selection-end="9123" vertical-scroll-proportion="16.01173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileCheckService/Interface_PushMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="38" selection-start="3543" selection-end="3543" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileCheckService/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="2" selection-start="2091" selection-end="2091" vertical-scroll-proportion="2.3327758">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="24" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_CloseCase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="24" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileCheckAuditPlatform/Interface_GetSystemTask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="6" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.5206612">
           <folding />
         </state>
       </provider>
